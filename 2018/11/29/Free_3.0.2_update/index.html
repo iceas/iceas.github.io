@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Free ��д��">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="iceas">
+    
+
+    <!-- Title -->
+    
+    <title>Free 更新日志 3.0.2 | Free Coding Upgrade</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Free 更新日志 3.0.2</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="2018-12-1-3-0-0-171"><a href="#2018-12-1-3-0-0-171" class="headerlink" title="2018/12/1: 3.0.0.171"></a>2018/12/1: 3.0.0.171</h3><p><strong>新增：</strong></p>
+<p><strong>加入身体平衡状态和生病。</strong>常数不完善，医院还没有跟上。附：真的太太累人了！</p>
+<p>调整：</p>
+<p>常数变动。</p>
+<p>代码调整。</p>
+<h3 id="2018-11-30-3-0-1-131"><a href="#2018-11-30-3-0-1-131" class="headerlink" title="2018/11/30: 3.0.1.131"></a>2018/11/30: 3.0.1.131</h3><p>调整：</p>
+<p>1.由于日后可能在不同地点睡觉，Asleep() 作为函数出现。睡觉醒来后不会自动保存。打鼾等循环音效改为mp3，不会被短音效覆盖。Body.LTS取消，改为Body.TimeAwake。</p>
+<p>2.体虚时家的背景音乐不同。</p>
+<p>3.大幅精简 Sound() 和 mciSendString()。</p>
+<p>4.打字室新增词汇。支持码风选择。默认开启插入模式。</p>
+<p>5.添加一些音效。</p>
+<p>6.新增 StateTurn()，精简 TimePass() 的状态转换。</p>
+<p>7.常数变动。</p>
+<h3 id="2018-11-28-3-0-1-68"><a href="#2018-11-28-3-0-1-68" class="headerlink" title="2018/11/28: 3.0.1.68"></a>2018/11/28: 3.0.1.68</h3><p>调整：</p>
+<p>1.主界面支持上下游标选择。</p>
+<p>2.常数变动。</p>
+<p>3.规范代码。</p>
+<p>4.部分 Sleep() 改为可跳过的 Delay()。</p>
+<h3 id="2018-11-27-3-0-1-1"><a href="#2018-11-27-3-0-1-1" class="headerlink" title="2018/11/27: 3.0.1.1"></a>2018/11/27: 3.0.1.1</h3><p>调整：</p>
+<p>1.移除一些DOS命令。不过毕竟是控制台游戏，DOS好用的话还是可用的。SetConsole也不过是针对控制台的。</p>
+<p>2.不会因为空腹而瞬间失去自然回复生命的能力。发现自然回复生命速度太快，进行调整。</p>
+<p>3.常数变动。</p>
+<p>4.返回标题界面完善了。</p>
+<p>5.武器店之前少了特判，按方向键↓不能离开。现在修复了。</p>
+<p>6.合并DialogBoxout到Mapout。每个场景会初始化场景信息，更规范。同时，除了Gate()，以后不用大量switch(Place)了。</p>
+<p>漫想：</p>
+<p>地区信息几次想用结构体存储。主要阻碍因素，一、地点代号非连续，离散化则地点代号失去意义，二、过度使用结构体会使地点函数都失去意义。是否使地点函数更能突出意义，所有信息在地点函数内？目前Mapin中switch(Place)不甚合理。CommonreMap_accordingto_Place()?该函数内还是需要switch。swtich语句过于冗长。仍是结构体比较理想。最终出现上方的调整第6条。</p>
+<h3 id="2018-11-26"><a href="#2018-11-26" class="headerlink" title="2018/11/26:"></a>2018/11/26:</h3><p>进入背包也算一步。</p>
+<p>不能返回标题界面也太令人抓狂了，现在尝试Esc返回标题界面。——感觉还行！</p>
+<p>更多代号定义。</p>
+<h3 id="2018-11-25"><a href="#2018-11-25" class="headerlink" title="2018/11/25:"></a>2018/11/25:</h3><p>代号统一大写+下划线。</p>
+<p>精简 Read()。</p>
+
+ 
+                <!-- Meta -->
+                <div class="post-meta">
+                    <hr>
+                    <br>
+                    <div class="post-tags">
+                        
+                    </div>
+                    <div class="post-date">
+                        2018 年 11 月 29 日
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- Disqus Comments -->
+
+
+            </div>
+        </div>
+    </div>
+</article>
+</section>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	console.log('Hexo-theme-hollow designed by zchen9 🙋 © 2015-' + (new Date()).getFullYear());
+</script>
+
+    <!-- Google Analytics -->
+    
+
+</body>
+
+</html>
