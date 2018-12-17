@@ -29,7 +29,7 @@ nav,
   font-family: 'Noto Serif', 'Times New Roman', serif;
 }
 .sans-serif {
-  font-family: Arial, 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .animation,
 .post-preview,
@@ -482,7 +482,7 @@ body {
   font-family: 'Noto Serif', 'Times New Roman', serif;
 }
 .sans-serif {
-  font-family: Arial, 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .animation,
 .article-container {
@@ -593,7 +593,7 @@ article .container .row .video-container embed {
   margin-top: 0;
 }
 article .container .row blockquote {
-  font-family: "Arial", serif;
+  font-family: Arial, serif;
   font-size: 1em;
   padding: 3px 30px 15px;
   color: #808080;
