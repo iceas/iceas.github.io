@@ -26,7 +26,7 @@ nav,
 .btn,
 .pagiantion li > a,
 .pagiantion li > span {
-  font-family: 'Noto Serif', 'Times New Roman', serif;
+  font-family: 'Noto Serif', '等线', '微软雅黑', 'Times New Roman', serif;
 }
 .sans-serif {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -34,7 +34,7 @@ nav,
 .animation,
 .post-preview,
 .article-container {
-  animation: bodyshow 0.9s linear;
+  animation: bodyshow 0s linear;
 }
 @-moz-keyframes 'bodyshow' {
   0% {
@@ -479,14 +479,14 @@ body {
   -o-background-size: cover;
 }
 .serif {
-  font-family: 'Noto Serif', 'Times New Roman', serif;
+  font-family: 'Noto Serif', '等线', '微软雅黑', 'Times New Roman', serif;
 }
 .sans-serif {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .animation,
 .article-container {
-  animation: bodyshow 0.9s linear;
+  animation: bodyshow 0s linear;
 }
 @-moz-keyframes 'bodyshow' {
   0% {
