@@ -79,7 +79,7 @@
 <li><p>全局常量变量、函数的定义移植到对应的.cpp。每个.cpp可以独立编译了。但是好像并没有什么用。而且维护麻烦了一点。修改参数要修改两个地方……</p>
 </li>
 </ul>
-<p>变量命名倾向于 <a href="https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/" target="_blank" rel="noopener">Google 的规则</a>，但不完全一样。</p>
+<p>变量命名格式倾向于 <a href="https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/" target="_blank" rel="noopener">Google 的规则</a>，但不完全一样。另外，一些名称变得比原来更人性化了，限定词不再总是以后缀。</p>
 <p>还是值得庆祝一下。</p>
 <h3 id="2018-12-25-3-0-2-5"><a href="#2018-12-25-3-0-2-5" class="headerlink" title="2018/12/25: 3.0.2.5"></a>2018/12/25: 3.0.2.5</h3><p>新增：</p>
 <p><strong>getlin(int lenlim) 函数</strong>，这是一个手工的<strong>带有监视效果</strong>的 getline()。什么意思呢……以前读入字符串的方式是：getline()，在缓存区中编辑字符串，在回车之前<strong>已经输入的字符无从得知</strong>。现在，任何时刻屏幕中的字符串被立即得知；当然依然可以编辑（删除、插入、左右移动光标等等，原来行的现在也可以，不允许通过上下键来复制之前的字符串）。又有什么好处呢……以前可以过长的字符串可以<a href="\Picture\E_1.png">破屏而出</a>，因此输入字符串的时候不得不特判其长度来强制清屏；当时即使这样也可以破屏，只需要先在屏幕上输入很长的字符串（暂不回车），然后 BackSpace，足够短时再回车，<a href="\Picture\E_2.png">屏幕保持破裂，信息缺失</a>。有了 getlin()，传入 lenlim 参数，一旦超长，就算不按回车也会强制回车。嗯对，有朝一日这个函数还会有其他便利的。刚刚写完，<strong>稳定性有待检验。</strong></p>
